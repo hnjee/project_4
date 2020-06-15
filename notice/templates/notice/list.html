@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/sample.css' %}">
+<link rel="stylesheet" href="{% static 'notice/css/sample2.css' %}">
+{% endblock css %}
+
+{% block content %}
+    <h1>Notice List Page</h1>
+    <h2>Sub Page</h2>
+    <img src="{% static 'images/sdwesd.jpg' %}">
+{% endblock content %}
+
+{% block customjs %}
+    <script src="{% static 'js/sample.js' %}"></script>
+    <script src="{% static 'notice/js/sample.js' %}"></script>
+{% endblock customjs %}
